@@ -1,4 +1,5 @@
-# Projet_ING
-_ Ce répertoire contient l'ensemble de mes projets au cours de mon cursus en école d'ingénieur. 
+# Projet_ING :
 
-_ This directory contains all my projects during my engineering studies.
+_ Ce répertoire contient certains de mes projets au cours de mon cursus en école d'ingénieur. 
+
+_ This directory contains my projects during my engineering studies.
