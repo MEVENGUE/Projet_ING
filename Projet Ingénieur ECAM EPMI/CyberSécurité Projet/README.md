@@ -38,22 +38,7 @@ Dans ce rapport, nous examinons les données sur les vulnérabilités de sécuri
 
 ## 📁 Structure du Projet
 
-CyberSécurité Projet/
-├── Couverture Projet Cybercécurité.png
-├── Projet_2 Analyse des Risques de Vulnérabilités en Cybersécurité.pdf
-└── CyberSécurité_Devoir_Projets/
-├── Projet_1_Librairies/
-│ └── Secure_Password.py
-├── Projet_2_data_cybersécurity/
-│ ├── Phishing_Email_classification.ipynb
-│ └── Phishing_Email.csv
-└── Vs Code/
-└── Cybersécurité/
-├── Crypto/
-├── Nmap/
-├── Python_review/
-├── Requests/
-└── Scapy/
+<img width="745" height="522" alt="image" src="https://github.com/user-attachments/assets/c4623949-1413-4bbb-b93d-f9ab7a7ba91a" />
 
 
 ## 🖼️ Présentation
