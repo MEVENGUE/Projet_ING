@@ -1,0 +1,4 @@
+
+_ https://www.kaggle.com/datasets/subhajournal/phishingemails?resource=download
+
+_ https://www.kaggle.com/code/vincentlaw11/prototype1

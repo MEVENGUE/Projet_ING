@@ -1,0 +1,169 @@
+Infos Projet ECAM EPMI : (13 Projets)
+
+
+1 - Projet CyberSécurité (Logiciel Qlik) :. Dans ce rapport, nous allons examiner les données sur les vulnérabilités de sécurité aux ÉtatsUnis à partir du catalogue des vulnérabilités exploitéesconnues de la CISA pour 2022, en mettant en évidence les tendances, les défis et les opportunités, tout en explorant les possibilités de visualisation des données
+pour une compréhension plus approfondie. 
+
+2 - IOT Projet (Wokwi logiciel) :  Ce projet utilise un ESP32 pour mesurer la température de l’eau avec un capteur de 
+température DS18B20 et le niveau d’eau à l’aide d’un capteur à ultrasons HC-SR04. Les 
+données recueillies par les capteurs sont affichées à la fois sur le moniteur série et sur un 
+écran LCD I2C 16x2 pour une lecture facile.
+
+3 - TP Proccédé DevOps et Qualité : Devops (Architecturer une toolchain de Transition : 
+Pipeline de déploiement : Cas de développement d’application)
+
+Qualité ( Définition Lean, Downtime, Gestions de Services IT(ITSM), La roue de Deming : PDCA, Description et exemple IT ou Sécurité (fil directeur) en décrivant chaque point,La cascade : Vision -> Objectifs -> KPI -> Métriques -> Mesures, Fournir 10 KPI’s classiques d’un SLA pour Gestion des Incidents, Changements, Demande.
+
+
+4 - TP OPENSTACK, DOCKER : 
+
+Ce rapport de TP aborde deux aspects essentiels de la virtualisation et de la conteneurisation, à savoir 
+OpenStack et Docker. Dans la première partie, nous explorons le déploiement d'une machine virtuelle 
+Linux via VirtualBox, suivie de l'installation d'OpenStack. Nous allons décrire les étapes de création de 
+projets, d'utilisateurs, de gabarits et de réseaux, ainsi que la visualisation de la topologie réseau.Dans la 
+seconde partie du TP, nous nous penchons sur Docker, un outil de conteneurisation de premier plan. 
+Nous décrivons les étapes d'installation de Docker sous un serveur Ubuntu, importons une image 
+Ubuntu, et exécutons divers exercices pour illustrer l'utilisation de Docker, notamment le lancement de 
+conteneurs, l'interaction en mode interactif et détaché, ainsi que la gestion des namespaces.Ce rapport 
+vise à détailler ces deux technologies majeures dans le domaine de la virtualisation et de la 
+conteneurisation.
+
+5 - Projet Electronique : FILTRE ANALOGIQUE STRUCTURE DE RAUCH ( Outils - Proteus)
+
+Le filtrage est une forme de traitement du signal, obtenu en 
+envoyant le signal à travers un ensemble de circuits 
+électroniques, qui modifient son spectre de fréquences ou sa 
+phase et donc sa forme temporelle. Ils sont classés en deux 
+familles principales, analogiques et numériques. Parmi les filtres 
+analogiques, nous avons les filtres passifs qui utilisent 
+principalement des inductances et des condensateurs de haute 
+qualité, et les filtres actifs qui sont constitués de condensateurs, 
+de résistances et d'éléments actifs. Dans ce projet de synthèse, 
+nous nous concentrerons sur les filtres actifs, plus précisément 
+les structures du second ordre, en parlant d'une structure 
+capable de produire tout type de filtre, la structure de Rauch. 
+Nous présenterons ces trois structures à savoir la structure 
+passe-bas, passe-haut et passe-bande qui seront illustrées par 
+des schémas et des exemples.
+
+6 - Projet Ethique : Dans le cadre de ce rapport éthique, nous examinerons le dilemme
+écologique auquel l’entreprise calédonienne Prony Resources a été confrontée. Nous
+analyserons la situation et proposerons une solution éthique pour résoudre ce dilemme.
+Pour mener à bien notre analyse, nous commencerons par présenter l’entreprise Prony
+Resources. Ensuite, nous nous pencherons sur le dilemme écologique auquel Prony
+Resources est confrontée.Enfin, nous proposerons une solution éthique pour résoudre le
+dilemme écologique de Prony Resources.
+
+7 - Projet Gestion de Projet :  un plan de projet détaillé pour la conception et la mise en œuvre d'un outil 
+de gestion destiné aux Conseils d'Administration et aux Comités de la SNCF. Dans un souci de répondre 
+de manière exhaustive aux besoins exprimés par la MOA (Client), nous avons élaboré un plan structuré 
+couvrant divers aspects du projet. 
+Le plan projet se base sur un cahier des charges approfondi, dont les grandes lignes sont présentées dans 
+la première section de ce document. Nous débuterons par une analyse approfondie du contexte et des 
+besoins exprimés par la MOA, énonçant clairement les objectifs du projet et délimitant son périmètre dans 
+un cadre spécifique et à une échelle définie. Pour assurer une compréhension complète, la section suivante 
+présente une vue d'ensemble de la SNCF, mettant en lumière les rôles des différentes entités et les 
+ambitions liées à ce projet.
+Le plan de projet inclut également une description technico-fonctionnelle détaillée de la solution retenue, 
+accompagnée de schémas explicatifs pour une visualisation claire. La planification des différentes tâches 
+à entreprendre est ensuite présentée sous forme de tableau, priorisant ces tâches pour une gestion efficace 
+du projet. Nous adoptons également une approche visuelle avec un diagramme de PERT, décrivant 
+l'enchaînement logique des tâches, les dates critiques, les marges et les actions correctives en cas de risques 
+identifiés.
+L'estimation des ressources requises, exprimée en Equivalent Temps Plein (ETP), et l'identification 
+chronologique des livrables constituent des aspects essentiels de ce plan de projet. Un macro-planning 
+détaillé, illustré à l'aide d'un diagramme de GANTT, permet une visualisation claire des jalons, des tâches 
+et des réunions du Comité de Pilotage (COPIL). La gestion des risques fait également l'objet d'une attention 
+particulière, avec un tableau associant des actions correctives à chaque risque potentiel.
+Enfin, la démarche qualité appliquée dans le cadre de la mise en œuvre du projet ainsi que le 
+fonctionnement de la relation MOA/MOE, y compris le suivi du projet, les tests de validation des livrables, 
+la recette du projet et la clôture, sont détaillés pour assurer une conduite de projet rigoureuse et une 
+satisfaction client maximale. Ce plan de projet constitue ainsi une feuille de route détaillée pour mener à 
+bien le développement et le déploiement réussi de l'outil de gestion des Conseils d'Administration et des 
+Comités de la SNCF.
+
+8 - Projet JAVA (Logiciel - StarUML): Java est un langage de programmation orienté objet et basé sur les classes,
+il est conçu pour avoir le moins de dépendances d'implémentation possible. Dans ce projet, nous allons essayer de résoudre un problème de la vie
+courante grâce au langage de programmation java et en utilisant le logiciel
+starUML pour représenter la situation décrite par le problème à résoudre. Nous avons d'abord utilisé le programme éclipse pour l'implémentation du
+code et la pratique, nous parlerons des problèmes rencontrés qui seront
+illustrés à l'aide d'images et les solutions trouvées seront fournies dans le
+code java à l'aide d'image de l'invite de commande éclipse.
+
+9 - Langage C - Microcontroleur : TP2 Generateur de signaux, TP3 Filtres
+
+
+10 - PROJET PHYSIQUE : Mesure de la constante de Boltzmann recherches
+
+11 - Projet Réseaux Virtuels, Clouds (Azure, Virtual Box) : Les réseaux virtuels et le cloud computing sont des composants essentiels de l'infrastructure 
+informatique moderne, offrant des solutions flexibles et évolutives pour l'hébergement de systèmes et 
+d'applications. Dans ce rapport, nous explorerons deux aspects fondamentaux de ces technologies : 
+l'utilisation de solutions de virtualisation avec Virtual Box, ainsi que l'intégration de Microsoft Azure 
+dans notre environnement. Dans la première partie de ce rapport, nous nous plongerons dans le monde de 
+la virtualisation en utilisant Virtual Box pour créer trois machines virtuelles basées sur le système 
+d'exploitation Linux Ubuntu. Ces machines seront configurées avec différentes interfaces réseau, 
+permettant des connexions Internet et des réseaux privés d'hôtes. Nous aborderons divers exercices allant 
+de l'installation du système d'exploitation à la vérification de la connectivité réseau et de l'accès à 
+Internet.La deuxième partie de ce rapport se concentrera sur Microsoft Azure, une plateforme de cloud 
+computing puissante et évolutive. Nous débuterons en explorant la souscription à Azure et la création 
+d'un groupe de ressources spécifique. Ensuite, nous déploierons une infrastructure avec deux serveurs 
+Linux Ubuntu (ou Windows Server) dans des réseaux privés virtuels Azure. Nous examinerons 
+également la communication entre ces serveurs, en mettant en évidence les règles de sécurité nécessaires 
+pour autoriser l'accès.Enfin, nous aborderons un scénario plus avancé dans lequel nous étendrons notre 
+infrastructure sur plusieurs régions, montrant comment mettre en place un peering de VNET pour 
+permettre la communication entre des ressources situées dans différentes zones géographiques. Ce 
+rapport vous guidera à travers ces étapes, en mettant en évidence les bonnes pratiques, les défis et les 
+solutions rencontrés tout au long de ce voyage passionnant dans le monde des réseaux virtuels et du 
+cloud computing
+
+12 - Projet Scientifique TIPE-Mobilité Autonome : Depuis l’invention de la roue au IIIeme millénaire avant J.-C., le transport est
+devenu un véritable défi pour l’être humain. En effet, cette pièce mécanique a
+totalement modifié les modes de déplacement de l’Homme et a ouvert des
+possibilités de développement qui s’étendent encore aujourd’hui. C’est la nature
+même de l’Homme de pousser jusqu’à ses retranchements les différentes
+technologies qu’ils découvrent et chaque avancement ouvre de nouvelles
+perspectives qui repoussent encore les limites du faisable. Nous nous déplaçons
+plus rapidement, plus simplement, plus loin mais les besoins de l’Homme eux non
+plus ne cessent de grandir. Dans un monde où la croissance urbaine et les besoins
+en transport accélèrent chaque jour, la mobilité autonome n’est plus un fantasme
+mais un besoin. Heureusement pour nous, cette ère est également caractérisée par
+la révolution numérique, un bouleversement de la société provoqué par l’essor des
+technologies informatiques qui touche de nombreux secteurs d’activités dont celui
+des transports. L’application de ces nouvelles technologies de communication et
+d’information autonome dans le domaine des transports sont les Systèmes de
+Transports Intelligents. Peut-on aveuglement se fier à ces technologies qui ont très
+rapidement fait partie de notre quotidien ? Nous essayerons de répondre à cette
+question en deux temps. Dans un premier temps nous verrons l’origine et les
+développements des méthodes de transport jusqu’à aujourd’hui, ainsi que les
+mutations que le futur nous réserve. Puis nous analyserons les différents avantages
+et inconvénients de cette innovation.
+
+13 -PROJET TRANSITION NUMÉRIQUE :  L’application pour le permis de conduire est une idée que notre groupe a eu l’idée de mettre
+en place, car cela concerne les personnes ayant eu le permis de conduire, qui est valable en
+France à l’âge de 18 ans. En effet, étant concerné par ce sujet nous-même, nous avons eu l’idée de créer cette
+application qui semble être une “solution” pour chacun d’entre nous, et pouvant
+potentiellement être dans le futur un outil “indispensable” qui aiderait chacun des
+automobilistes sur la route. Selon nous, ce sujet est “l'idéal” pour chacun d’entre nous, car dans un premier temps, il est
+très intéressant pour l’ensemble du groupe, ensuite cette idée est innovante, et enfin nous
+savons tous que le permis de conduire concerne une grande majorité de nous tous, et qu’il est
+important de développer cette idée aujourd’hui. Pour cela, nous avons saisi l’occasion pour faire de ce projet d’école une réalité, en
+approfondissant l’idée qu’on a eu, de voir s’il est possible de le concevoir, s’il n’est pas en
+réalité une mauvaise idée, et pourquoi pas si tout se passe bien, le mettre en oeuvre pour
+pouvoir apporter à chacun des automobilistes une “innovation” et un confort de conduite.
+
+Infos Projet SUPINFO (en cours) :
+
+- Présentation Application Fleetman : L’objectif de ce mini-projet est de déployer une application microservices réelle, 
+Fleetman, sur un cluster Kubernetes composé d’un nœud master et de deux 
+nœuds workers, créés et hébergés sur Hyper-V. L’application Fleetman simule la 
+position de véhicules en temps réel et affiche ces positions sur une interface 
+web. Elle s’appuie sur plusieurs technologies : microservices Spring Boot, 
+MongoDB, ActiveMQ, Nginx et bien sûr Kubernetes pour l’orchestration. 
+Ce projet a deux objectifs principaux :
+Technique : mettre en œuvre un déploiement complet d’une application 
+microservices sur un cluster Kubernetes auto-hébergé (kubeadm), y compris la 
+gestion du stockage, du réseau, des services et des probes de santé.
+Pédagogique : comprendre les bonnes pratiques de déploiement (namespace, 
+StatefulSet, Deployments, Services, ConfigMaps), documenter la procédure et 
+être capable de la présenter lors de la soutenance.
+
