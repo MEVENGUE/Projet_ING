@@ -89,7 +89,9 @@ Architecture d'une toolchain de transition numérique :
 
 📄 [Voir les rapports](./Projet%20Ingénieur%20ECAM%20EPMI/ITIL_Agile_SCRUM_Lean/)
 
-![Pipeline DevOps](./Projet%20Ingénieur%20ECAM%20EPMI/ITIL_Agile_SCRUM_Lean/DeVOps%20%20proccédés%20ITIL%20Pipeline%20de%20déploiement%20%20Cas%20de%20développement%20d'application.png)
+<div align="center">
+  <img src="./Projet%20Ingénieur%20ECAM%20EPMI/ITIL_Agile_SCRUM_Lean/DeVOps%20%20proccédés%20ITIL%20Pipeline%20de%20déploiement%20%20Cas%20de%20développement%20d'application.png" alt="Pipeline DevOps" width="800" style="max-width: 100%; height: auto;">
+</div>
 
 ---
 
