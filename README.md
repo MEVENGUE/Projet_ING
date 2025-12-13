@@ -4,15 +4,25 @@
 
 ### **Franck MEVENGUE** - Étudiant Ingénieur
 
-<br>
-
-<img src="./Logo%20écoles/ECAM%20EPMI%20Logo.png" alt="ECAM EPMI" height="60" style="margin-right: 20px;">
-<img src="./Logo%20écoles/SUPINFO%20Paris%20Logo.png" alt="SUPINFO Paris" height="60">
-
-<br><br>
-
-[![ECAM EPMI](https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge)](https://www.ecam-epmi.com/)
-[![SUPINFO Paris](https://img.shields.io/badge/SUPINFO%20Paris-Engineering-red?style=for-the-badge)](https://www.supinfo.com/)
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./Logo%20écoles/ECAM%20EPMI%20Logo.png" alt="ECAM EPMI" width="180">
+      <br>
+      <a href="https://www.ecam-epmi.com/">
+        <img src="https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge" alt="ECAM EPMI">
+      </a>
+    </td>
+    <td align="center" width="50"></td>
+    <td align="center">
+      <img src="./Logo%20écoles/SUPINFO%20Paris%20Logo.png" alt="SUPINFO Paris" width="180">
+      <br>
+      <a href="https://www.supinfo.com/">
+        <img src="https://img.shields.io/badge/SUPINFO%20Paris-Engineering-red?style=for-the-badge" alt="SUPINFO Paris">
+      </a>
+    </td>
+  </tr>
+</table>
 
 *Portfolio présentant mes réalisations techniques au cours de mon cursus en école d'ingénieur*
 
