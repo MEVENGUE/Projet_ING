@@ -29,7 +29,6 @@ Pour cela, nous avons saisi l'occasion pour faire de ce projet d'école une réa
 ## 📄 Documentation
 
 - [Rapport complet du projet](./projet%20Transition%20numérique%20KARAN%20KUMAR_MEVENGUE%20FRANCK_REMI%20SINGH_WILLIAM%20OLIVIER%20.pdf)
-- [Vidéo de présentation (MP4)](./video%20Présentation%20application%20Permis%20de%20Conduire.mp4)
 
 ## 🎯 Objectifs
 
