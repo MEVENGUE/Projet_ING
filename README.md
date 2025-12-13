@@ -2,12 +2,12 @@
 
 <div align="center">
 
-### **Franck MEVENGUE** - Étudiant Ingénieur
+### **Franck MEVENGUE** - Étudiant
 
 [![ECAM EPMI](https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge)](https://www.ecam-epmi.com/)
 [![SUPINFO Paris](https://img.shields.io/badge/SUPINFO%20Paris-Engineering-red?style=for-the-badge)](https://www.supinfo.com/)
 
-*Portfolio présentant mes réalisations techniques au cours de mon cursus en école d'ingénieur*
+*Portfolio présentant mes réalisations techniques au cours de mon cursus scolaire*
 
 </div>
 
@@ -15,7 +15,7 @@
 
 ## 📋 À propos
 
-Ce portfolio regroupe l'ensemble de mes projets réalisés dans le cadre de mes études d'ingénieur, couvrant des domaines variés allant de la **cybersécurité** à l'**IoT**, en passant par le **cloud computing**, le **développement logiciel** et la **gestion de projet**.
+Ce portfolio regroupe l'ensemble de mes projets réalisés dans le cadre de mes études, couvrant des domaines variés allant de la **cybersécurité** à l'**IoT**, en passant par le **cloud computing**, le **développement logiciel** et la **gestion de projet**.
 
 Chaque projet démontre ma capacité à :
 - 🔧 **Analyser** des problèmes complexes
@@ -194,9 +194,9 @@ Application innovante pour la gestion du permis de conduire :
 
 ### 12. 🔬 Projet Physique - Mesure de la Constante de Boltzmann
 
-**Technologies :** `Physique Expérimentale` | `Web Development`
+**Technologies :** `Physique Expérimentale` | `Web`
 
-Mesure expérimentale de la constante de Boltzmann avec interface web interactive.
+Mesure de la constante de Boltzmann.
 
 📄 [Voir le projet](./Projet%20Ingénieur%20ECAM%20EPMI/Projet%20Physique/)
 
@@ -270,7 +270,7 @@ Projets en cours avec Microsoft Azure.
 ## 📈 Statistiques du Portfolio
 
 - **13 projets** ECAM EPMI
-- **3 projets** SUPINFO Paris (en cours)
+- **projets** SUPINFO Paris (en cours)
 - **Domaines couverts :** Cybersécurité, IoT, Cloud, DevOps, Électronique, Gestion de Projet, Développement Logiciel
 
 ---
@@ -279,8 +279,8 @@ Projets en cours avec Microsoft Azure.
 
 <div align="center">
 
-**Portfolio réalisé dans le cadre de mes études d'ingénieur**
+**Portfolio réalisé dans le cadre de mes études**
 
-*Dernière mise à jour : 2024*
+*Dernière mise à jour : 2025*
 
 </div>
