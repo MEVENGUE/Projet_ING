@@ -18,7 +18,7 @@
       <img src="./Logo%20écoles/SUPINFO%20Paris%20Logo.png" alt="SUPINFO Paris" width="180">
       <br>
       <a href="https://www.supinfo.com/">
-        <img src="https://img.shields.io/badge/SUPINFO%20Paris-Engineering-red?style=for-the-badge" alt="SUPINFO Paris">
+        <img src="https://img.shields.io/badge/SUPINFO%20Paris-Master-red?style=for-the-badge" alt="SUPINFO Paris">  
       </a>
     </td>
   </tr>
