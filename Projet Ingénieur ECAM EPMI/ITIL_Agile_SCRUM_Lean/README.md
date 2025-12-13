@@ -40,7 +40,7 @@ Architecturer une toolchain de transition numérique avec un pipeline de déploi
 ## 🖼️ Présentation
 
 <div align="center">
-  <img src="./DeVOps%20%20proccédés%20ITIL%20Pipeline%20de%20déploiement%20%20Cas%20de%20développement%20d'application.png" alt="Pipeline DevOps" width="900" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="./DeVOps.png" alt="Pipeline DevOps" width="900" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <br><br>
   <img src="./Image%20Qualité%20TP.png" alt="Image Qualité TP" width="600" style="max-width: 100%; border-radius: 8px;">
   <br><br>
