@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### **Franck MEVENGUE** - Étudiant Ingénieur
+### **Franck MEVENGUE** - Étudiant
 
 <table align="center">
   <tr>
@@ -207,7 +207,7 @@ Application innovante pour la gestion du permis de conduire :
 - Prototypage et présentation
 
 📄 [Voir le projet](./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/)
-🎥 [Voir la vidéo de présentation](./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/video%20Présentation%20application%20Permis%20de%20Conduire.mp4)
+🎥 [Présentation](./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/video%20Présentation%20application%20Permis%20de%20Conduire.gif)
 
 ---
 
