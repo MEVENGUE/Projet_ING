@@ -4,6 +4,11 @@
 
 ### **Franck MEVENGUE** - Étudiant
 
+<div align="center">
+  <img src="./Logo%20écoles/ECAM%20EPMI%20Logo.png" alt="ECAM EPMI" width="200" style="margin: 10px;">
+  <img src="./Logo%20écoles/SUPINFO%20Paris%20Logo.png" alt="SUPINFO Paris" width="200" style="margin: 10px;">
+</div>
+
 [![ECAM EPMI](https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge)](https://www.ecam-epmi.com/)
 [![SUPINFO Paris](https://img.shields.io/badge/SUPINFO%20Paris-Engineering-red?style=for-the-badge)](https://www.supinfo.com/)
 
