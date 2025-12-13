@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-*Portfolio présentant mes réalisations techniques au cours de mon cursus en école d'ingénieur*
+*Portfolio présentant mes réalisations techniques au cours de mon cursus scolaire*
 
 </div>
 
