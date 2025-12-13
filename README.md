@@ -207,7 +207,10 @@ Application innovante pour la gestion du permis de conduire :
 - Prototypage et présentation
 
 📄 [Voir le projet](./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/)
-🎥 [Présentation](./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/video%20Présentation%20application%20Permis%20de%20Conduire.gif)
+
+<div align="center">
+  <img src="./Projet%20Ingénieur%20ECAM%20EPMI/projet%20Transition%20numérique/video%20Présentation%20application%20Permis%20de%20Conduire.gif" alt="Vidéo de présentation - Application Permis de Conduire" width="800" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</div>
 
 ---
 
