@@ -2,7 +2,25 @@
 
 <div align="center">
 
-<img src="./Images/Banner%20Github.png" width="100%">
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./Logo%20écoles/ECAM%20EPMI%20Logo.png" alt="ECAM EPMI" width="180">
+      <br>
+      <a href="https://www.ecam-epmi.com/">
+        <img src="https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge" alt="ECAM EPMI">
+      </a>
+    </td>
+    <td align="center" width="50"></td>
+    <td align="center">
+      <img src="./Logo%20écoles/SUPINFO%20Paris%20Logo.png" alt="SUPINFO Paris" width="180">
+      <br>
+      <a href="https://www.supinfo.com/">
+        <img src="https://img.shields.io/badge/SUPINFO%20Paris-Master-red?style=for-the-badge" alt="SUPINFO Paris">  
+      </a>
+    </td>
+  </tr>
+</table>
 
 # 👨‍💻 Franck MEVENGUE
 
