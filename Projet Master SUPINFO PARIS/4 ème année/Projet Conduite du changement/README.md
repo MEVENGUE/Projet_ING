@@ -1,7 +1,7 @@
 # Conduite du changement
 
 <div align="center">
-  <img src="./1%C3%A8re%20page%20Conduite%20du%20changement.jpg" alt="Couverture Conduite du changement" width="800">
+  <img src="./1ère%20page%20Conduite%20du%20changement.jpg" alt="Couverture Conduite du changement" width="800">
 </div>
 
 ## 🎯 Mission
