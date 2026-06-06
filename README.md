@@ -162,7 +162,7 @@ Conception et sécurisation avancée d’une infrastructure Linux orientée cybe
 
 ### 📄 Documentation
 
-➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/)
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/)
 
 ![Couverture Linux](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/Projet%20Evil%20Corp/Images/Présentation%20Projet%20entreprise.jpg)
 
@@ -188,6 +188,8 @@ Administration et sécurisation d’une infrastructure Microsoft d’entreprise 
 - Supervision et segmentation de l’infrastructure
 
 ### 📄 Documentation
+
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/)
 
 ➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/Rapport/Projet_MedSearch_Infrastructure_Microsoft_4MCSA.pdf)
 
@@ -217,6 +219,8 @@ Conception d’une architecture cloud scalable et sécurisée sur AWS :
 
 ### 📄 Documentation
 
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20AWS%20Cloud%20Architect/Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/)
+
 ➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20AWS%20Cloud%20Architect/Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Docs/Rapport%20Technique%20Fin%20-%20Projet%20Capstone%20AWS.pdf)
 
 ![Couverture AWS](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20AWS%20Cloud%20Architect/Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Graphique/1%20ère%20page%20Projet%20Capstone%20AWS.jpg)
@@ -241,6 +245,8 @@ Projet stratégique centré sur l’accompagnement humain dans les transformatio
 - Gouvernance et pilotage de transformation
 
 ### 📄 Documentation
+
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Conduite%20du%20changement/)
 
 ➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Conduite%20du%20changement/Projet%20finale%20Conduite%20du%20changement.pdf)
 
@@ -267,6 +273,8 @@ Conception de solutions métiers low-code avec l’écosystème Microsoft :
 
 ### 📄 Documentation
 
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fondamentaux%20et%20Manipulation%20Microsoft%20Power%20Platform/Projet%20Capstone/)
+
 ➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fondamentaux%20et%20Manipulation%20Microsoft%20Power%20Platform/Projet%20Capstone/Capstone%20Project%20-%20Student%20Guide.pdf)
 
 ---
@@ -289,6 +297,8 @@ Conception d’une infrastructure virtualisée d’entreprise :
 - Architecture haute disponibilité NovaSys
 
 ### 📄 Documentation
+
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Virtualization%20Specialist/Projet%20NovaSys%20Infra/)
 
 ➡️ [Voir la présentation](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Virtualization%20Specialist/Projet%20NovaSys%20Infra/Projet%20NovaSys%20presentation.pdf)
 
@@ -317,6 +327,8 @@ Conception d’une infrastructure multi-datacenter active/active hautement dispo
 - Déploiement d’une webapp FastAPI & Nginx
 
 ### 📄 Documentation
+
+➡️ [Voir le Projet](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto)
 
 ➡️ [Voir le rapport Infrastructure](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/0-Architecture%20Infra%20Supfile/rapport-infrastructure-SUPFile-PARIS8.pdf)
 
