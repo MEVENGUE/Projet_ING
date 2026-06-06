@@ -145,8 +145,7 @@ Conception et sécurisation avancée d’une infrastructure Linux orientée cybe
 
 ➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/)
 
-![Couverture Linux](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/Graphique/1%20ère%20Page%20de%20présentation.jpg)
-
+![Couverture Linux](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/Projet%20Evil%20Corp/Images/Présentation%20Projet%20entreprise.jpg)
 
 
 ---
