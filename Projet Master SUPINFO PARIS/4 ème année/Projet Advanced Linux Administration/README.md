@@ -1,7 +1,7 @@
 # Advanced Linux Administration — Evil Corp
 
 <div align="center">
-  <img src="./Projet%20Evil%20Corp/Pr%C3%A9sentation%20Projet%20Evilcorp.pdf" alt="Présentation Evil Corp" width="900">
+  <img src="./Projet%20Evil%20Corp/Images/Présentation%20Projet%20entreprise.jpg" width="900">
 </div>
 
 ## 🎯 Mission
