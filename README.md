@@ -578,23 +578,9 @@ Analyse éthique d'un dilemme écologique dans l'industrie minière calédonienn
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=MEVENGUE&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9"/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MEVENGUE&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
-
 <br><br>
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=MEVENGUE&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF"/>
-
-</div>
-
----
-
-# 🏆 GitHub Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=MEVENGUE&theme=tokyonight&no-frame=true&row=1&column=6"/>
 
 </div>
 
