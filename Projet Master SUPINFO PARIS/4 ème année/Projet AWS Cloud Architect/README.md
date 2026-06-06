@@ -31,6 +31,7 @@ Concevoir une architecture **cloud résiliente et sécurisée** sur AWS en suiva
 ## 📄 Livrables
 
 - [Capstone Project — AWS Academy Cloud Architecting 3](./Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/AWS%20Academy%20Cloud%20Architecting%203%20Capstone%20Project.txt)
+- - [Capstone Project — Rapport Technique](./Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Docs/Rapport%20Technique%20Fin%20-%20Projet%20Capstone%20AWS.pdf)
 
 ---
 
