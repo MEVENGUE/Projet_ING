@@ -151,11 +151,11 @@ Toronto (Debian 100.126.8.98)
 ## 🎤 Présentation officielle
 
 <div align="center">
-  <a href="./6-%20Pr%C3%A9sentation%20Projet%20Supfile/SUPFile-Infrastructure-POC.pdf">
+  <a href="./6-%20Présentation%20Projet%20Supfile/SUPFile-Infrastructure-POC.pdf">
     <img src="./3-captures-ecran/07-application-web-supfile-deployee-ny.png" alt="Voir la présentation" width="600">
   </a>
-  <br>
-  👉 <strong>[Voir la présentation officielle](./6-%20Pr%C3%A9sentation%20Projet%20Supfile/SUPFile-Infrastructure-POC.pdf)</strong>
+  
+  👉 <strong> [Voir la présentation officielle](./6-%20Présentation%20Projet%20Supfile/SUPFile-Infrastructure-POC.pdf/) </strong>
 </div>
 
 ---
