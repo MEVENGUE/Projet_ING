@@ -7,7 +7,7 @@
     <td align="center">
       <img src="./Logo%20écoles/ECAM%20EPMI%20Logo.png" alt="ECAM EPMI" width="180">
       <br>
-      <a href="https://www.ecam-epmi.com/">
+      <a href="https://www.ecam-epmi.fr/">
         <img src="https://img.shields.io/badge/ECAM%20EPMI-Engineering-blue?style=for-the-badge" alt="ECAM EPMI">
       </a>
     </td>
