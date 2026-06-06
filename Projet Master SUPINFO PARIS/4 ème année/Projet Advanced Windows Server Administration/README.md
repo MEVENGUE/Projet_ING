@@ -1,7 +1,7 @@
 # Advanced Windows Server Administration — MedSearchLab
 
 <div align="center">
-  <img src="./MedSearchLab/Assessment.pdf" alt="Assessment MedSearchLab" width="900">
+  <img src="./MedSearchLab/Graphique/1%20ère%20Page%20de%20présentation.jpg" alt="Assessment MedSearchLab" width="900">
 </div>
 
 ## 🎯 Mission
