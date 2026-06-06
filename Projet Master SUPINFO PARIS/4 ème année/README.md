@@ -19,4 +19,4 @@ Cette année couvre l’automatisation, le cloud, les infrastructures distribué
 | Kubernetes | Application microservices Fleetman sur cluster Kubernetes |
 | Virtualization Specialist | Conception d’infrastructure virtualisée NovaSys |
 
-💡 Pour chaque projet, les captures, tests et livrables sont organisés dans le dossier correspondant. Si tu veux, je peux ensuite créer la version “premium” du README principal avec un tableau plus visuel et des liens entre ECAM EPMI et SUPINFO.
+💡 Pour chaque projet, les captures, tests et livrables sont organisés dans le dossier correspondant.
