@@ -357,12 +357,19 @@ Conception d’une infrastructure multi-datacenter active/active hautement dispo
 
 </div>
 
-
-
-
 ---
 
-## 🎓 Projets ECAM EPMI
+# 🎓 Projets ECAM EPMI
+
+# 🏛️ École d'Ingénieurs généralistes en système d'informations 
+
+<div align="center">
+
+![ECAM EPMI](https://img.shields.io/badge/ECAM%20EPMI-Engineering-red?style=for-the-badge&logo=microsoftazure)
+
+</div>
+
+---
 
 ### 1. 🔐 Projet Cybersécurité - Analyse des Vulnérabilités
 
