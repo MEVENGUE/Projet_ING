@@ -340,6 +340,13 @@ Conception d’une infrastructure multi-datacenter active/active hautement dispo
 
 ![Architecture Logique](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/6-%20Présentation%20Projet%20Supfile/Images/Architecture%20Logique.jpg)
 
+
+---
+
+### 5e année
+
+*En cours d’ajout.*
+
 ---
 
 <div align="center">
@@ -349,6 +356,9 @@ Conception d’une infrastructure multi-datacenter active/active hautement dispo
 💻 Kubernetes • AWS • Linux • Windows Server • Virtualization • DevOps • Cybersecurity
 
 </div>
+
+
+
 
 ---
 
@@ -540,12 +550,6 @@ Mesure de la constante de Boltzmann.
 Analyse éthique d'un dilemme écologique dans l'industrie minière calédonienne et proposition de solutions responsables.
 
 📄 [Voir le rapport](./Projet%20Ingénieur%20ECAM%20EPMI/Projet%20Ethique/)
-
----
-
-### 5e année
-
-*En cours d’ajout.*
 
 ---
 
