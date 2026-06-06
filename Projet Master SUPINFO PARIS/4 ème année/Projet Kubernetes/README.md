@@ -1,7 +1,7 @@
 # Kubernetes — Fleetman
 
 <div align="center">
-  <img src="./1page%20Application%20AFleetman.jpg" alt="Présentation Fleetman" width="900">
+  <img src="./1page%20Application%20Fleetman.jpg" alt="Présentation Fleetman" width="900">
 </div>
 
 ## 🎯 Mission
