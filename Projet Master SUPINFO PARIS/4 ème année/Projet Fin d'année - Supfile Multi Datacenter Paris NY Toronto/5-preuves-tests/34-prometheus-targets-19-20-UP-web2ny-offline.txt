@@ -1,0 +1,158 @@
+# Prometheus targets — capture live 24 mai 2026 14:22 UTC+2
+# Source : curl http://100.126.8.98:9090/api/v1/targets (Toronto)
+# Résultat : 19/20 UP — 1 DOWN (web2-ny 100.114.39.112, offline documenté)
+# NOTE : web2-ny est le nœud backup NY (LOW_RAM POC), documenté offline en §8 du rapport.
+
+=== RÉSUMÉ ===
+UP   haproxy-ny          100.84.166.8:8404
+UP   haproxy-paris       100.69.138.20:8404
+UP   ny-nodes            100.103.234.33:9100   (storage2-ny)
+UP   ny-nodes            100.121.176.58:9100   (storage3-ny)
+UP   ny-nodes            100.105.116.110:9100  (web1-ny)
+UP   ny-nodes            100.100.6.35:9100     (proxysql-ny)
+UP   ny-nodes            100.84.166.8:9100     (lb-ny)
+UP   ny-nodes            100.102.26.5:9100     (storage1-ny)
+DOWN ny-nodes            100.114.39.112:9100   (web2-ny — backup offline, LOW_RAM POC)
+UP   ny-nodes            100.93.154.48:9100    (storage1-ny tailscale)
+UP   paris-nodes         100.79.11.48:9100     (storage2-paris)
+UP   paris-nodes         100.65.222.115:9100   (storage3-paris)
+UP   paris-nodes         100.126.63.76:9100    (db-paris)
+UP   paris-nodes         100.97.25.14:9100     (web2-paris)
+UP   paris-nodes         100.69.138.20:9100    (lb-paris)
+UP   paris-nodes         100.112.202.64:9100   (web1-paris)
+UP   paris-nodes         100.95.209.14:9100    (proxysql-paris)
+UP   paris-nodes         100.122.223.27:9100   (storage1-paris)
+UP   prometheus          localhost:9090        (Toronto)
+UP   toronto-nodes       100.126.8.98:9100     (Toronto)
+
+=== JSON BRUT (api/v1/targets) ===
+{
+    "status": "success",
+    "data": {
+        "activeTargets": [
+            {
+                "labels": {"instance": "100.84.166.8:8404", "job": "haproxy-ny", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:02.942425156+02:00",
+                "lastScrapeDuration": 0.237929875,
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.69.138.20:8404", "job": "haproxy-paris", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:53.612449004+02:00",
+                "lastScrapeDuration": 0.519096988,
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.103.234.33:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:52.064468298+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.121.176.58:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:49.520589792+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.105.116.110:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:51.645637251+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.100.6.35:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:52.146997179+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.84.166.8:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:53.458613567+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.102.26.5:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:01.795118932+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.114.39.112:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "Get \"http://100.114.39.112:9100/metrics\": context deadline exceeded",
+                "lastScrape": "2026-05-24T14:21:50.541407563+02:00",
+                "health": "down"
+            },
+            {
+                "labels": {"instance": "100.93.154.48:9100", "job": "ny-nodes", "site": "ny"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:01.901726666+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.79.11.48:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:49.414293994+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.65.222.115:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:57.574394781+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.126.63.76:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:02.729068336+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.97.25.14:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:02.376523356+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.69.138.20:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:50.18623982+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.112.202.64:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:59.715498346+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.95.209.14:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:55.05447734+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.122.223.27:9100", "job": "paris-nodes", "site": "paris"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:57.465367848+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "localhost:9090", "job": "prometheus"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:21:58.100715116+02:00",
+                "health": "up"
+            },
+            {
+                "labels": {"instance": "100.126.8.98:9100", "job": "toronto-nodes", "site": "toronto"},
+                "lastError": "",
+                "lastScrape": "2026-05-24T14:22:00.61505707+02:00",
+                "health": "up"
+            }
+        ],
+        "droppedTargets": []
+    }
+}

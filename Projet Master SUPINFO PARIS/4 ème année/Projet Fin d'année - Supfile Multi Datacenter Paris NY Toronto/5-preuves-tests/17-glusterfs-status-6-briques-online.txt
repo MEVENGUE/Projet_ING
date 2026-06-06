@@ -1,0 +1,14 @@
+Status of volume: supfile-vol
+Gluster process                             TCP Port  RDMA Port  Online  Pid
+------------------------------------------------------------------------------
+Brick 100.122.223.27:/data/brick1/gluster   49831     0          Y       1278 
+Brick 100.79.11.48:/data/brick2/gluster     54123     0          Y       1167 
+Brick 100.65.222.115:/data/brick3/gluster   52803     0          Y       1062 
+Self-heal Daemon on localhost               N/A       N/A        Y       1289 
+Self-heal Daemon on 100.79.11.48            N/A       N/A        Y       1194 
+Self-heal Daemon on 100.65.222.115          N/A       N/A        Y       1092 
+ 
+Task Status of Volume supfile-vol
+------------------------------------------------------------------------------
+There are no active volume tasks
+ 

@@ -1,0 +1,23 @@
+ 
+Volume Name: supfile-vol
+Type: Distributed-Replicate
+Volume ID: 0df36ad8-3c8b-484d-9e37-b22cdc9b0b8d
+Status: Started
+Snapshot Count: 0
+Number of Bricks: 2 x 3 = 6
+Transport-type: tcp
+Bricks:
+Brick1: 100.122.223.27:/data/brick1/gluster
+Brick2: 100.79.11.48:/data/brick2/gluster
+Brick3: 100.65.222.115:/data/brick3/gluster
+Brick4: 100.93.154.48:/data/brick1/gluster
+Brick5: 100.103.234.33:/data/brick2/gluster
+Brick6: 100.121.176.58:/data/brick3/gluster
+Options Reconfigured:
+network.ping-timeout: 10
+cluster.quorum-type: auto
+cluster.granular-entry-heal: on
+storage.fips-mode-rchecksum: on
+transport.address-family: inet
+nfs.disable: on
+performance.client-io-threads: off

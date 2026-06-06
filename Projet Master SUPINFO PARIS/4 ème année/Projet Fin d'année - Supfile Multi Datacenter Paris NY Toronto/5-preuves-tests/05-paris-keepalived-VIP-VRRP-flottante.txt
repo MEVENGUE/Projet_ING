@@ -1,0 +1,2 @@
+    inet 10.10.1.100/24 scope global secondary enp0s8
+       valid_lft forever preferred_lft forever

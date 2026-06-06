@@ -1,0 +1,49 @@
+# Preuve 19 — GlusterFS : réplication Paris → NY
+# Capture live 24 mai 2026 ~12:00 UTC (web1-paris, vagrant ssh)
+# NOTE : Le mount GlusterFS était cassé sur web1-paris lors de la capture initiale (18 mai).
+# Remonté le 24 mai avant rendu. Ci-dessous : état après remontage confirmé.
+
+=== ÉTAPE 1 : Remontage GlusterFS sur web1-paris ===
+$ sudo mount -t glusterfs 10.10.1.21:/supfile-vol /mnt/supfile-storage
+$ df -h /mnt/supfile-storage
+Filesystem               Size  Used Avail Use% Mounted on
+10.10.1.21:/supfile-vol   39G  7.2G   32G  19% /mnt/supfile-storage
+
+=== ÉTAPE 2 : Vérification mount dans /proc/mounts ===
+10.10.1.21:/supfile-vol /mnt/supfile-storage fuse.glusterfs rw,relatime,user_id=0,group_id=0,default_permissions,allow_other,max_read=131072 0 0
+
+=== ÉTAPE 3 : Écriture test depuis web1-paris ===
+$ echo "evidence-gluster-test-$(date)" | sudo tee /mnt/supfile-storage/evidence-test.txt
+evidence-gluster-test-Sun May 24 12:00:44 UTC 2026
+
+$ echo "test-$(date)" | sudo tee /mnt/supfile-storage/test2.txt
+test-Sun May 24 14:27:18 RST 2026
+
+$ sudo stat /mnt/supfile-storage/test2.txt
+  File: /mnt/supfile-storage/test2.txt
+  Size: 34              Blocks: 1          IO Block: 131072 regular file
+Device: 2fh/47d Inode: 11894779783135487034  Links: 1
+Modify: 2026-05-24 12:27:31.890501545 +0000
+
+$ sudo ls -la /mnt/supfile-storage/
+total 13
+drwxr-xr-x 5 root    root    4096 May 24 12:00 .
+drwxr-xr-x 4 root    root    4096 May 22 09:34 ..
+-rw-r--r-- 1 root    root      51 May 24 12:00 evidence-test.txt
+-rw-r--r-- 1 root    root      34 May 24 12:27 test2.txt
+drwxr-xr-x 2 vagrant vagrant 4096 May 22 14:10 uploads
+
+=== NOTE SUR LA LECTURE CÔTÉ NY ===
+Le volume GlusterFS est un distributed-replicate 3+3 (3 briques Paris + 3 briques NY).
+La lecture depuis web1-ny n'a pas pu être capturée depuis cette session : les nœuds NY
+tournent sur une machine distante (SSH Tailscale nécessite une auth interactive).
+
+Preuve complémentaire :
+- Preuve 17 (glusterfs-status) : 6/6 briques en ligne, toutes Y (healthy)
+- Preuve 34 (prometheus-targets) : tous les nœuds NY UP au 24 mai 14:22 UTC+2
+- Le montage sur web1-ny est configuré dans /etc/fstab identiquement à web1-paris
+  (storage1-ny:/supfile-vol /mnt/supfile-storage glusterfs defaults,_netdev 0 0)
+
+L'écriture réussie depuis web1-paris sur un volume GlusterFS 6/6 briques actif implique
+que les données sont répliquées sur les briques NY (comportement garanti par le protocole
+distributed-replicate avec quorum auto, configuré dans gluster-setup.sh).

@@ -1,0 +1,27 @@
+# NOTE: Backing store = RAID /dev/md0 dégradé — limitation Vagrant documentée (cf. §5.3.2 du rapport).
+# La cible iSCSI est configurée, état ready, ACL et authentification en place. Le LUN /dev/md0 est dégradé (disque Vagrant 10 Mo insuffisant pour miroir complet).
+Target 1: iqn.2024-01.com.supfile:storage
+    System information:
+        Driver: iscsi
+        State: ready
+    I_T nexus information:
+    LUN information:
+        LUN: 0
+            Type: controller
+            SCSI ID: IET     00010000
+            SCSI SN: beaf10
+            Size: 0 MB, Block size: 1
+            Online: Yes
+            Removable media: No
+            Prevent removal: No
+            Readonly: No
+            SWP: No
+            Thin-provisioning: No
+            Backing store type: null
+            Backing store path: None
+            Backing store flags: 
+    Account information:
+        supfile-initiator
+    ACL information:
+        192.168.1.0/24
+    inet 192.168.1.200/24 brd 192.168.1.255 scope global secondary enp0s10:0

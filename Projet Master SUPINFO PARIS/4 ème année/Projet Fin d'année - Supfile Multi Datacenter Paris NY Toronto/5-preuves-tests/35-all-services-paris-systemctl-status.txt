@@ -1,0 +1,16 @@
+=== lb-paris ===
+active	active	inactive	inactive	inactive	inactive	inactive	inactive	active	inactive	active
+=== web1-paris ===
+inactive	inactive	active	inactive	inactive	inactive	inactive	inactive	active	active	active
+=== web2-paris ===
+inactive	inactive	active	inactive	inactive	inactive	inactive	inactive	active	activating	active
+=== storage1-paris ===
+inactive	inactive	inactive	active	active	active	inactive	inactive	active	inactive	active
+=== storage2-paris ===
+inactive	inactive	inactive	active	active	active	inactive	inactive	active	inactive	active
+=== storage3-paris ===
+inactive	inactive	inactive	inactive	active	active	inactive	inactive	active	inactive	active
+=== db-paris ===
+inactive	inactive	inactive	inactive	inactive	inactive	active	inactive	active	inactive	active
+=== proxysql-paris ===
+inactive	inactive	inactive	inactive	inactive	inactive	inactive	active	active	inactive	active

@@ -1,0 +1,134 @@
+total 24K
+-rw-rw-r-- 1 root root 8.8K May 15 19:03 supfile-20260515.tar.gz
+-rw-r--r-- 1 root root 8.9K May 18 15:37 supfile-2026-05-18.tar.gz
+---
+total 32K
+-rw-rw-r-- 1 root root   20 May 15 19:03 db-20260515.sql.gz
+-rw-r--r-- 1 root root   20 May 18 15:37 db-2026-05-18.sql.gz
+-rw-rw-r-- 1 root root   21 May  2 19:53 fichier1.txt
+-rw-rw-r-- 1 root root   15 May  2 19:53 fichier2.txt
+drwxr-xr-x 4 root root 4.0K May 15 02:31 s1
+drwxr-xr-x 4 root root 4.0K May 15 02:31 s2
+drwxr-xr-x 4 root root 4.0K May 15 02:31 s3
+-rw-rw-r-- 1 root root   41 May 14 15:06 test_demo.txt
+---
+[Mon 18 May 2026 02:17:22 PM CEST] ===== Backup 2026-05-18 =====
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,716 bytes  4,025.33 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 02:17:23 PM CEST] OK  paris-storage1
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,521 bytes  1,062.36 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 02:17:28 PM CEST] OK  paris-storage2
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,455 bytes  1,283.78 bytes/sec
+total size is 145  speedup is 0.03
+[Mon 18 May 2026 02:17:32 PM CEST] OK  paris-storage3
+# Tailscale SSH requires an additional check.
+# To authenticate, visit: https://login.tailscale.com/a/l1ce29a4b34d122
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(716) [Receiver=3.4.1]
+[Mon 18 May 2026 02:22:05 PM CEST] ERR ny-storage1
+Warning: Permanently added '100.103.234.33' (ED25519) to the list of known hosts.
+receiving incremental file list
+rsync: [sender] change_dir "/data/brick2/gluster" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  1.88 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1852) [Receiver=3.4.1]
+rsync: [Receiver] write error: Broken pipe (32)
+[Mon 18 May 2026 02:22:13 PM CEST] ERR ny-storage2
+Warning: Permanently added '100.121.176.58' (ED25519) to the list of known hosts.
+receiving incremental file list
+rsync: [sender] change_dir "/data/brick3/gluster" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  1.68 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1852) [Receiver=3.4.1]
+rsync: [Receiver] write error: Broken pipe (32)
+[Mon 18 May 2026 02:22:23 PM CEST] ERR ny-storage3
+mysqldump: Got error: 2026: "TLS/SSL error: SSL is required, but the server does not support it" when trying to connect
+[Mon 18 May 2026 02:22:23 PM CEST] OK  db-dump
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from hard link targets
+[Mon 18 May 2026 02:22:23 PM CEST] Tape: supfile-2026-05-18.tar.gz
+[Mon 18 May 2026 02:22:23 PM CEST] ===== Done =====
+[Mon 18 May 2026 02:34:53 PM CEST] ===== Backup 2026-05-18 =====
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,720 bytes  2,416.80 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 02:34:55 PM CEST] OK  paris-storage1
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,521 bytes  687.41 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 02:35:03 PM CEST] OK  paris-storage2
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,455 bytes  2,310.80 bytes/sec
+total size is 145  speedup is 0.03
+[Mon 18 May 2026 02:35:05 PM CEST] OK  paris-storage3
+# Tailscale SSH requires an additional check.
+# To authenticate, visit: https://login.tailscale.com/a/lb74f3ff34e19a
+tailscale: failed to fetch next SSH action
+Connection closed by 100.93.154.48 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(232) [Receiver=3.4.1]
+[Mon 18 May 2026 03:06:41 PM CEST] ===== Backup 2026-05-18 =====
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,719 bytes  2,416.40 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 03:06:43 PM CEST] OK  paris-storage1
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,521 bytes  2,337.20 bytes/sec
+total size is 145  speedup is 0.02
+[Mon 18 May 2026 03:06:45 PM CEST] OK  paris-storage2
+receiving incremental file list
+.glusterfs/health_check
+
+sent 322 bytes  received 5,451 bytes  1,049.64 bytes/sec
+total size is 145  speedup is 0.03
+[Mon 18 May 2026 03:06:50 PM CEST] OK  paris-storage3
+# Tailscale SSH requires an additional check.
+# To authenticate, visit: https://login.tailscale.com/a/l6e741f6348477
+tailscale: failed to fetch next SSH action
+Connection closed by 100.93.154.48 port 22
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(232) [Receiver=3.4.1]
+[Mon 18 May 2026 03:36:50 PM CEST] ERR ny-storage1
+receiving incremental file list
+rsync: [sender] change_dir "/data/brick2/gluster" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  3.56 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1852) [Receiver=3.4.1]
+rsync: [Receiver] write error: Broken pipe (32)
+[Mon 18 May 2026 03:36:54 PM CEST] ERR ny-storage2
+receiving incremental file list
+rsync: [sender] change_dir "/data/brick3/gluster" failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  1.52 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1852) [Receiver=3.4.1]
+rsync: [Receiver] write error: Broken pipe (32)
+[Mon 18 May 2026 03:37:04 PM CEST] ERR ny-storage3
+mysqldump: Got error: 2026: "TLS/SSL error: SSL is required, but the server does not support it" when trying to connect
+[Mon 18 May 2026 03:37:04 PM CEST] OK  db-dump
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from hard link targets
+[Mon 18 May 2026 03:37:04 PM CEST] Tape: supfile-2026-05-18.tar.gz
+[Mon 18 May 2026 03:37:04 PM CEST] ===== Done =====

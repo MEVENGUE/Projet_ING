@@ -1,0 +1,1 @@
+{"service":"SUPFile","node":"web2-ny","status":"ok","version":"1.0-poc"}

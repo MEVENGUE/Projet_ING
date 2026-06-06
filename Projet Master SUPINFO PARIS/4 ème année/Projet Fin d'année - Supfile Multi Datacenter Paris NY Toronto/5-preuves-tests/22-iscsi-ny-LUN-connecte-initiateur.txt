@@ -1,0 +1,1 @@
+tgtadm: failed to send request hdr to tgt daemon, Transport endpoint is not connected

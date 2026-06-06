@@ -24,6 +24,10 @@
   </tr>
 </table>
 
+[![Email](https://img.shields.io/badge/Email-mevenguefranck%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:mevenguefranck@gmail.com)
+&nbsp;
+[![Site Web](https://img.shields.io/badge/Site-Web-Vercel-black?style=for-the-badge&logo=vercel)](https://mevenguefranck-siteweb.vercel.app/)
+
 *Portfolio présentant mes réalisations techniques au cours de mon cursus scolaire*
 
 </div>
@@ -236,41 +240,22 @@ Analyse éthique d'un dilemme écologique dans l'industrie minière calédonienn
 
 ## 🎓 Projets SUPINFO Paris
 
-### 1. ☸️ Kubernetes - Déploiement Application Fleetman
+### 4e année
 
-**Technologies :** `Kubernetes` | `Microservices` | `Spring Boot` | `MongoDB` | `ActiveMQ` | `Nginx` | `Hyper-V`
+| Projet | Technologies |
+|--------|--------------|
+| Kubernetes — Fleetman | Kubernetes, Spring Boot, MongoDB, ActiveMQ, Nginx, Hyper-V |
+| Advanced Linux Administration — Evil Corp | Linux hardening, auditd, SELinux/AppArmor, firewalld, Prometheus, rsync/borg, PRA |
+| Advanced Windows Server Administration — MedSearchLab | Windows Server, AD DS, DNS, DHCP, GPO, hardening, supervision |
+| AWS Cloud Architect — Capstone | AWS, IAM, VPC, EC2, Auto Scaling, S3, EBS, Bastion Host |
+| Conduite du changement | Diagnostic de maturité, cartographie des parties prenantes, plan de communication, gestion des résistances |
+| Microsoft Power Platform — Capstone | Power Apps, Power Automate, Power BI, Dataverse, low-code/no-code |
+| Virtualization Specialist — NovaSys Infra | VMware/Hyper-V/VirtualBox, VLAN, snapshot, sauvegarde, PRA |
+| Fin d’année — Supfile Multi-Datacenter | Vagrant, VirtualBox, MariaDB Galera, GlusterFS, HAProxy, Keepalived, ProxySQL, Prometheus, Grafana, Fail2ban, Suricata, Tailscale, FastAPI, Nginx |
 
-Déploiement complet d'une application microservices sur un cluster Kubernetes :
-- Cluster Kubernetes (1 master + 2 workers) sur Hyper-V
-- Application Fleetman avec suivi de véhicules en temps réel
-- Architecture microservices (Spring Boot, MongoDB, ActiveMQ)
-- Bonnes pratiques : Namespaces, StatefulSet, Deployments, Services, ConfigMaps
-- Gestion du stockage, réseau et probes de santé
+### 5e année
 
-📄 [Voir la présentation](./Projet%20SUPINFO%20PARIS/Projet%20Kubernetes/Présentation%20Application%20Fleetman.pdf)
-
----
-
-### 2. 🔵 Microsoft Power Platform
-
-**Technologies :** `Power Platform` | `Low-Code` | `Microsoft`
-
-Projets en cours avec Microsoft Power Platform.
-
----
-
-### 3. ☁️ Microsoft Azure - SUPFile
-
-**Technologies :** `Azure` | `Cloud Computing` | `Microsoft`
-
-SUPFile est une application web moderne de stockage de fichiers cloud sécurisée, inspirée de Dropbox. 
-Elle permet aux utilisateurs de stocker, organiser, partager et gérer leurs fichiers de manière sécurisée dans le cloud.
-
-Projets en cours avec Microsoft Azure :  🔗  Site Web : [supfile-webapp.fr](https://supfile-webapp.vercel.app/login)
-
-Voir Projet 👉 : [Github_Projet](https://github.com/MEVENGUE/SUPFile-app/tree/main)
-
----
+*En cours d’ajout.*
 
 ## 🛠️ Technologies & Compétences
 

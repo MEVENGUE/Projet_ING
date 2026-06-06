@@ -1,0 +1,6 @@
+=== BEFORE (web1 active) ===
+{"service":"SUPFile","node":"web1-paris","status":"ok","version":"1.0-poc"}
+=== AFTER web1 stopped (web2 takes over) ===
+{"service":"SUPFile","node":"web2-paris","status":"ok","version":"1.0-poc"}
+=== RESTORED (web1 back) ===
+{"service":"SUPFile","node":"web1-paris","status":"ok","version":"1.0-poc"}

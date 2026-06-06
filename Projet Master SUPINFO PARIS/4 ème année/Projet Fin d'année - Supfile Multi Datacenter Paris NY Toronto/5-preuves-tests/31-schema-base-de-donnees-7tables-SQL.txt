@@ -1,0 +1,21 @@
+Tables_in_supfile
+audit_log
+files
+ip_bans
+sessions
+share_links
+storage_nodes
+users
+v_active_sessions
+v_file_listing
+v_node_capacity
+v_user_storage
+Tables_in_supfile	Table_type
+v_active_sessions	VIEW
+v_file_listing	VIEW
+v_node_capacity	VIEW
+v_user_storage	VIEW
+Db	Name	Type	Definer	Modified	Created	Security_type	Comment	character_set_client	collation_connection	Database Collation
+supfile	sp_ban_ip	PROCEDURE	root@localhost	2026-05-14 20:07:16	2026-05-14 20:07:16	DEFINER		utf8mb3	utf8mb3_general_ci	utf8mb4_unicode_ci
+supfile	sp_register_user	PROCEDURE	root@localhost	2026-05-14 20:07:16	2026-05-14 20:07:16	DEFINER		utf8mb3	utf8mb3_general_ci	utf8mb4_unicode_ci
+supfile	sp_update_quota	PROCEDURE	root@localhost	2026-05-14 20:07:16	2026-05-14 20:07:16	DEFINER		utf8mb3	utf8mb3_general_ci	utf8mb4_unicode_ci

@@ -1,0 +1,219 @@
+
+Vagrant.configure("2") do |config|
+
+#=========================
+#
+# GLOBAL SETTINGS
+#
+#=========================
+
+config.vm.boot_timeout = 1800
+
+config.winrm.timeout = 1800
+config.winrm.retry_limit = 50
+
+WINDOWS_BOX = "gusztavvargadr/windows-server-2022-standard"
+
+#=========================================================
+#
+# DC1 - PRIMARY DOMAIN CONTROLLER
+#
+#=========================================================
+
+config.vm.define "dc1" do |dc1|
+
+dc1.vm.box = WINDOWS_BOX
+dc1.vm.hostname = "DC1"
+
+dc1.vm.network "private_network", ip: "192.168.56.10"
+
+dc1.vm.provider "virtualbox" do |vb|
+  vb.name = "DC1"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = true
+
+  vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+  vb.customize ["modifyvm", :id, "--vram", "64"]
+  vb.customize ["modifyvm", :id, "--nested-hw-virt", "off"]
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+dc1.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# DC2 - SECOND DOMAIN CONTROLLER
+#
+#=========================================================
+
+config.vm.define "dc2" do |dc2|
+
+dc2.vm.box = WINDOWS_BOX
+dc2.vm.hostname = "DC2"
+
+dc2.vm.network "private_network", ip: "192.168.56.11"
+
+dc2.vm.provider "virtualbox" do |vb|
+  vb.name = "DC2"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+  vb.customize ["modifyvm", :id, "--vram", "32"]
+  vb.customize ["modifyvm", :id, "--nested-hw-virt", "off"]
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+dc2.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# FS1 - FILE SERVER
+#
+#=========================================================
+
+config.vm.define "fs1" do |fs1|
+
+fs1.vm.box = WINDOWS_BOX
+fs1.vm.hostname = "FS1"
+
+fs1.vm.network "private_network", ip: "192.168.56.20"
+
+fs1.vm.provider "virtualbox" do |vb|
+  vb.name = "FS1"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+fs1.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# WEB1 - IIS SERVER
+#
+#=========================================================
+
+config.vm.define "web1" do |web1|
+
+web1.vm.box = WINDOWS_BOX
+web1.vm.hostname = "WEB1"
+
+web1.vm.network "private_network", ip: "192.168.56.30"
+
+web1.vm.provider "virtualbox" do |vb|
+  vb.name = "WEB1"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+web1.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# DB1 - DATABASE SERVER
+#
+#=========================================================
+
+config.vm.define "db1" do |db1|
+
+db1.vm.box = WINDOWS_BOX
+db1.vm.hostname = "DB1"
+
+db1.vm.network "private_network", ip: "192.168.56.40"
+
+db1.vm.provider "virtualbox" do |vb|
+  vb.name = "DB1"
+
+  vb.memory = 6144
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+db1.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# CLIENT1
+#
+#=========================================================
+
+config.vm.define "client1" do |client1|
+
+client1.vm.box = WINDOWS_BOX
+client1.vm.hostname = "CLIENT1"
+
+client1.vm.network "private_network", type: "dhcp"
+
+client1.vm.provider "virtualbox" do |vb|
+  vb.name = "CLIENT1"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+client1.vm.communicator = "winrm"
+
+end
+
+#=========================================================
+#
+# CLIENT2
+#
+#=========================================================
+
+config.vm.define "client2" do |client2|
+
+client2.vm.box = WINDOWS_BOX
+client2.vm.hostname = "CLIENT2"
+
+client2.vm.network "private_network", type: "dhcp"
+
+client2.vm.provider "virtualbox" do |vb|
+  vb.name = "CLIENT2"
+
+  vb.memory = 4096
+  vb.cpus = 2
+
+  vb.gui = false
+
+  vb.customize ["modifyvm", :id, "--paravirtprovider", "hyperv"]
+end
+
+client2.vm.communicator = "winrm"
+
+end
+
+end

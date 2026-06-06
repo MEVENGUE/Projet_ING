@@ -1,0 +1,4 @@
+=== PARIS ===
+{"service":"SUPFile","node":"web1-paris","status":"ok","version":"1.0-poc"}
+=== NEW YORK ===
+{"service":"SUPFile","node":"web2-ny","status":"ok","version":"1.0-poc"}

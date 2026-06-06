@@ -1,0 +1,20 @@
+100.69.138.20    lb-paris              aamononeal@  linux    -                                                         
+100.105.116.110  db-ny                 aamononeal@  linux    -                                                         
+100.126.63.76    db-paris              aamononeal@  linux    -                                                         
+100.84.166.8     lb-ny                 aamononeal@  linux    active; direct 37.67.108.120:54745, tx 489412 rx 445292   
+100.75.192.51    new-york-franck-andy  aamononeal@  windows  -                                                         
+100.104.40.6     paris-ayman           aamononeal@  windows  idle, tx 7940 rx 1972                                     
+100.100.6.35     proxysql-ny           aamononeal@  linux    -                                                         
+100.97.25.14     proxysql-paris        aamononeal@  linux    -                                                         
+100.93.154.48    storage1-ny           aamononeal@  linux    -                                                         
+100.122.223.27   storage1-paris        aamononeal@  linux    -                                                         
+100.103.234.33   storage2-ny           aamononeal@  linux    -                                                         
+100.79.11.48     storage2-paris        aamononeal@  linux    -                                                         
+100.121.176.58   storage3-ny           aamononeal@  linux    -                                                         
+100.65.222.115   storage3-paris        aamononeal@  linux    -                                                         
+100.86.39.68     test-client           aamononeal@  android  offline, last seen 2d ago                                 
+100.126.8.98     toronto               aamononeal@  linux    active; direct 88.161.171.73:31708, tx 2521132 rx 346940  
+100.102.26.5     web1-ny               aamononeal@  linux    -                                                         
+100.112.202.64   web1-paris            aamononeal@  linux    -                                                         
+100.114.39.112   web2-ny               aamononeal@  linux    offline, last seen 41m ago                                
+100.95.209.14    web2-paris            aamononeal@  linux    -                                                         

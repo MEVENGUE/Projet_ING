@@ -1,0 +1,7 @@
+=== INSERT on db-paris ===
+Row inserted on db-paris
+=== SELECT on Toronto (replicated from Paris) ===
+action	created_at
+evidence-test-2	2026-05-18 14:33:45
+=== SELECT on NY (100.105.116.110) — mariadb offline ===
+db-ny mariadb not running (Franck's machine); cross-DC replication to toronto confirmed above

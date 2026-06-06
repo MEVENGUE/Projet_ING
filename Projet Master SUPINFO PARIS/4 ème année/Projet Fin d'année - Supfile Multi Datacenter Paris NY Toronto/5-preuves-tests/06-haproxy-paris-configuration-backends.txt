@@ -1,0 +1,55 @@
+global
+    log /dev/log local0
+    maxconn 10000
+    user haproxy
+    group haproxy
+    daemon
+    stats socket /var/run/haproxy/admin.sock mode 660 level admin
+
+defaults
+    log     global
+    mode    http
+    option  httplog
+    option  forwardfor
+    option  http-server-close
+    timeout connect 5s
+    timeout client  30s
+    timeout server  30s
+
+# Stats (management interface only)
+frontend stats
+    bind 192.168.99.10:8404
+    stats enable
+    stats uri /stats
+    stats refresh 10s
+    stats auth admin:SUPFile2024!
+    stats show-node
+
+# Main HTTP entry point
+frontend http_front
+    bind *:80
+    # IP ban — list populated by ban-sync cron every 5 min
+    acl banned src -f /etc/haproxy/banned_ips.txt
+    http-request deny deny_status 403 if banned
+    # Brute-force rate limit
+    stick-table type ip size 100k expire 30s store http_req_rate(10s)
+    http-request track-sc0 src
+    acl rate_abuse sc_http_req_rate(0) gt 200
+    http-request deny deny_status 429 if rate_abuse
+    http-response set-header X-Served-By "paris"
+    default_backend local_web
+
+# Active/Passive local cluster
+# web1 = ACTIVE (primary), web2 = PASSIVE (backup keyword)
+backend local_web
+    balance roundrobin
+    option httpchk GET /health HTTP/1.1\r\nHost:\ localhost
+    http-check expect status 200
+    server web1 10.10.1.11:80 check inter 2s rise 2 fall 3
+    server web2 10.10.1.12:80 check inter 2s rise 2 fall 3 backup
+
+# Cross-DC fallback — Active/Active behaviour
+# Only used when ALL local servers are down
+backend remote_dc
+    option httpchk GET /health HTTP/1.1\r\nHost:\ localhost
+    server remote 100.84.166.8:80 check inter 5s

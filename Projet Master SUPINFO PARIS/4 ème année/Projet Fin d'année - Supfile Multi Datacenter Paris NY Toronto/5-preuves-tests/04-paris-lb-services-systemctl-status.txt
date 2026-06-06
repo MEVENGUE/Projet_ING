@@ -1,0 +1,20 @@
+● haproxy.service - HAProxy Load Balancer
+     Loaded: loaded (/lib/systemd/system/haproxy.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2026-05-18 13:34:21 UTC; 47min ago
+       Docs: man:haproxy(1)
+             file:/usr/share/doc/haproxy/configuration.txt.gz
+    Process: 6468 ExecReload=/usr/sbin/haproxy -Ws -f $CONFIG -c -q $EXTRAOPTS (code=exited, status=0/SUCCESS)
+    Process: 6470 ExecReload=/bin/kill -USR2 $MAINPID (code=exited, status=0/SUCCESS)
+   Main PID: 811 (haproxy)
+      Tasks: 2 (limit: 495)
+     Memory: 9.0M
+        CPU: 6.893s
+     CGroup: /system.slice/haproxy.service
+             ├─ 811 /usr/sbin/haproxy -sf 6222 -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -S /run/haproxy-master.sock
+             └─6472 /usr/sbin/haproxy -sf 6222 -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -S /run/haproxy-master.sock
+
+May 18 14:20:54 lb-paris haproxy[6472]: 100.84.166.8:50110 [18/May/2026:14:20:54.717] http_front local_web/web1 0/0/164/39/203 200 170 - - ---- 1/1/0/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:21:00 lb-paris haproxy[6472]: 100.84.166.8:50118 [18/May/2026:14:21:00.009] http_front local_web/web1 0/0/3/3/6 200 170 - - ---- 1/1/0/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:21:05 lb-paris haproxy[6472]: 100.84.166.8:42836 [18/May/2026:14:21:05.607] http_front local_web/web1 0/0/4/4/8 200 170 - - ---- 1/1/0/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:21:10 lb-paris haproxy[6472]: 100.84.166.8:42852 [18/May/2026:14:21:10.764] http_front local_web/web1 0/0/3/13/16 200 170 - - ---- 1/1/0/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:21:12 lb-paris haproxy[6472]: 100.104.40.6:51540 [18/May/2026:14:21:12.840] http_front local_web/web1 0/0/4/3/7 200 170 - - ---- 1/1/0/0/0 0/0 "GET /health HTTP/1.1"

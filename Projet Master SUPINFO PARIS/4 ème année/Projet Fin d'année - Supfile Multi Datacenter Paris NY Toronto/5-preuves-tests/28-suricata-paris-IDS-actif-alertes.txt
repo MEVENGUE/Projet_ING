@@ -1,0 +1,8 @@
+● suricata.service - Suricata IDS/IDP daemon
+     Loaded: loaded (/lib/systemd/system/suricata.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2026-05-18 14:14:49 UTC; 23min ago
+       Docs: man:suricata(8)
+             man:suricatasc(8)
+             https://suricata-ids.org/docs/
+   Main PID: 942 (Suricata-Main)
+      Tasks: 4 (limit: 1099)

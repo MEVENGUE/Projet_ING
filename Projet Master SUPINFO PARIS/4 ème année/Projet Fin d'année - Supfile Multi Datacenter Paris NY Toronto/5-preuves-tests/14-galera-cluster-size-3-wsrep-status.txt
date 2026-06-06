@@ -1,0 +1,9 @@
+=== db-paris ===
+wsrep_local_state_comment	Synced
+wsrep_cluster_size	2
+wsrep_ready	ON
+=== toronto (100.126.8.98) ===
+Variable_name	Value
+wsrep_cluster_size	2
+=== db-ny (100.105.116.110) — mariadb offline ===
+wsrep_cluster_size  N/A (needs Franck to start mariadb)

@@ -1,0 +1,155 @@
+# =================================================================
+# SUPFile Infrastructure POC — Vagrantfile
+# lien repo GitHub : https://github.com/MEVENGUE/SUPFile-VB-App
+# Github Vagrant Code : https://github.com/AymanMain/supfile
+# =================================================================
+# USAGE:
+#   SITE=paris   vagrant up        ← you
+#   SITE=ny      vagrant up        ← teammate A
+#   SITE=toronto vagrant up        ← teammate B
+#
+#   LOW_RAM=true SITE=paris vagrant up   ← if RAM is tight (<10GB)
+#
+# Single VM:
+#   SITE=paris vagrant up web1-paris
+#
+# REQUIRES: VirtualBox 7.x + Vagrant 2.4+
+# =================================================================
+
+SITE    = ENV.fetch('SITE', 'paris')
+LOW_RAM = ENV['LOW_RAM'] == 'true'
+raise "SITE must be paris|ny|toronto" unless %w[paris ny toronto].include?(SITE)
+
+# ── Network plan ─────────────────────────────────────────────────
+#
+#  VLAN 1 — Web/App    (intnet site-specific)   : 10.10.X.0/24
+#    All VMs in the site. HTTP, HAProxy, GlusterFS client mounts.
+#
+#  VLAN 2 — SAN        (intnet site-specific)   : 192.168.X.0/24
+#    Storage VMs ONLY. iSCSI traffic. Isolated from web traffic.
+#    This is the "dedicated SAN fabric" referenced in the grading.
+#
+#  VLAN 3 — Management (host-only, all sites)   : 192.168.99.0/24
+#    SSH from Windows host, Wazuh agents, Prometheus scraping,
+#    cross-DC simulation (simulates WireGuard backbone for POC).
+#
+#  VLAN 4 — XDC tunnel (intnet shared)         : 10.20.0.0/24
+#    Gateway VMs only. Simulates WireGuard inter-DC backbone.
+#    In production: replaced by real WireGuard tunnel over internet.
+
+NET = {
+  'paris'   => { web: '10.10.1', san: '192.168.1', mgmt_base: 10 },
+  'ny'      => { web: '10.10.2', san: '192.168.2', mgmt_base: 40 },
+  'toronto' => { web: '10.10.3', san: nil,          mgmt_base: 70 }
+}
+
+W   = NET[SITE][:web]
+S   = NET[SITE][:san]
+MB  = NET[SITE][:mgmt_base]
+
+# role | web_oct | mgmt_off | ram_mb | cpus | extra_disk | san_oct | xdc_ip
+PARIS_NY = [
+  ['lb',       10,  0, 512,  1, false, nil, SITE=='paris' ? '10.20.0.1' : '10.20.0.2'],
+  ['web1',     11,  1, 1024, 1, false, nil, nil],
+  ['web2',     12,  2, 768,  1, false, nil, nil],
+  ['storage1', 21, 11, 1024, 1, true,  21,  nil],
+  ['storage2', 22, 12, 768,  1, true,  22,  nil],
+  ['storage3', 23, 13, 512,  1, true,  23,  nil],
+  ['db',       31, 21, 1024, 1, false, nil, nil],
+  ['proxysql', 32, 22, 512,  1, false, nil, nil],
+]
+
+# NOTE: In our POC, all Toronto roles run on one physical machine.
+# The 4 VM definitions below represent the logical architecture.
+# In production each would be a dedicated server.
+# Nadia runs all roles on toronto (100.126.8.98) — Debian 13.
+TORONTO = [
+  ['backup',  11,  0, 512,  1, true,  nil, '10.20.0.3'],
+  ['coldweb', 12,  1, 768,  1, false, nil, nil],
+  ['db',      31, 11, 1024, 1, false, nil, nil],
+  ['monitor', 41, 21, 2048, 2, false, nil, nil],
+]
+
+SKIP_LOW_RAM = %w[web2 storage2 storage3 proxysql coldweb].freeze
+VMS = (SITE == 'toronto' ? TORONTO : PARIS_NY).freeze
+
+Vagrant.configure('2') do |config|
+  config.vm.box              = 'ubuntu/jammy64'
+  config.vm.box_check_update = false
+
+  # Shared infra SSH public key (for inter-VM rsync)
+  config.vm.provision 'file',
+    source: 'configs/supfile_id_rsa.pub', destination: '/tmp/supfile_id_rsa.pub'
+
+  VMS.each do |role, woct, moff, ram, cpus, disk, soct, xdc|
+    next if LOW_RAM && SKIP_LOW_RAM.include?(role)
+
+    name    = "#{role}-#{SITE}"
+    web_ip  = "#{W}.#{woct}"
+    mgmt_ip = "192.168.99.#{MB + moff}"
+    san_ip  = soct ? "#{S}.#{soct}" : nil
+    ram_mb  = LOW_RAM ? [ram/2, 384].max : ram
+
+    config.vm.define name do |n|
+      n.vm.hostname = name
+
+      # Port forward: web1-paris app (NAT adapter 1)
+      if role == 'web1' && SITE == 'paris'
+        n.vm.network 'forwarded_port', guest: 8080, host: 8080, host_ip: '0.0.0.0'
+        n.vm.network 'forwarded_port', guest: 80,   host: 8000, host_ip: '0.0.0.0'
+      end
+
+      # Adapter 2: Web VLAN (site-internal)
+      n.vm.network 'private_network', ip: web_ip,
+        virtualbox__intnet: "supfile-web-#{SITE}"
+
+      # Adapter 3: Management (host-only — accessible from Windows)
+      n.vm.network 'private_network', ip: mgmt_ip
+
+      # Adapter 4: SAN VLAN (storage VMs only)
+      if san_ip
+        n.vm.network 'private_network', ip: san_ip,
+          virtualbox__intnet: "supfile-san-#{SITE}"
+      end
+
+      # Adapter 5: XDC tunnel (gateway VMs only)
+      if xdc
+        n.vm.network 'private_network', ip: xdc,
+          virtualbox__intnet: 'supfile-xdc'
+      end
+
+      n.vm.provider 'virtualbox' do |vb|
+        vb.name         = name
+        vb.memory       = ram_mb
+        vb.cpus         = cpus
+        vb.linked_clone = true
+
+        if disk
+          dir  = File.join(__dir__, 'disks')
+          path = File.join(dir, "#{name}.vdi")
+          FileUtils.mkdir_p(dir)
+          unless File.exist?(path)
+            vb.customize ['createhd', '--filename', path,
+                          '--variant', 'Fixed', '--size', 8192]
+          end
+          vb.customize ['storageattach', :id, '--storagectl', 'SCSI',
+                        '--port', 2, '--device', 0, '--type', 'hdd', '--medium', path]
+        end
+      end
+
+      n.vm.provision 'file', source: 'scripts/',  destination: '/tmp/scripts'
+      n.vm.provision 'file', source: 'configs/',  destination: '/tmp/configs'
+
+      n.vm.provision 'shell',
+        env: { 'SITE'=>SITE,'ROLE'=>role,'WEB_IP'=>web_ip,'MGMT_IP'=>mgmt_ip,
+               'SAN_IP'=>san_ip.to_s,'XDC_IP'=>xdc.to_s,
+               'WEB_NET'=>W,'SAN_NET'=>S.to_s,'MGMT_NET'=>'192.168.99' },
+        inline: <<~SH
+          set -e
+          chmod +x /tmp/scripts/*.sh /tmp/scripts/post-provision/*.sh 2>/dev/null || true
+          /tmp/scripts/base.sh        2>&1 | tee /var/log/supfile-base.log
+          /tmp/scripts/role-#{role}.sh 2>&1 | tee /var/log/supfile-role.log
+        SH
+    end
+  end
+end

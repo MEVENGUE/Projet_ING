@@ -1,0 +1,20 @@
+● haproxy.service - HAProxy Load Balancer
+     Loaded: loaded (/lib/systemd/system/haproxy.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2026-05-18 11:08:42 UTC; 3h 13min ago
+       Docs: man:haproxy(1)
+             file:/usr/share/doc/haproxy/configuration.txt.gz
+    Process: 763 ExecStartPre=/usr/sbin/haproxy -Ws -f $CONFIG -c -q $EXTRAOPTS (code=exited, status=0/SUCCESS)
+    Process: 7896 ExecReload=/usr/sbin/haproxy -Ws -f $CONFIG -c -q $EXTRAOPTS (code=exited, status=0/SUCCESS)
+    Process: 7898 ExecReload=/bin/kill -USR2 $MAINPID (code=exited, status=0/SUCCESS)
+   Main PID: 799 (haproxy)
+      Tasks: 2 (limit: 495)
+     Memory: 9.2M
+        CPU: 2min 15.345s
+     CGroup: /system.slice/haproxy.service
+             ├─ 799 /usr/sbin/haproxy -sf 7723 -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -S /run/haproxy-master.sock
+             └─7900 /usr/sbin/haproxy -sf 7723 -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -S /run/haproxy-master.sock
+
+May 18 14:21:57 lb-ny haproxy[7900]: Server local_web/web1 is DOWN, reason: Layer7 timeout, check duration: 2000ms. 0 active and 1 backup servers left. Running on backup. 1 sessions active, 0 requeued, 0 remaining in queue.
+May 18 14:21:59 lb-ny haproxy[7900]: 100.69.138.20:47570 [18/May/2026:14:21:59.011] http_front local_web/web2 0/0/59/532/591 200 170 - - ---- 2/2/1/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:22:04 lb-ny haproxy[7900]: 100.69.138.20:34568 [18/May/2026:14:22:04.780] http_front local_web/web2 0/0/14/18/32 200 170 - - ---- 2/2/1/0/0 0/0 "GET /health HTTP/1.1"
+May 18 14:22:10 lb-ny haproxy[7900]: 100.69.138.20:34584 [18/May/2026:14:22:09.912] http_front local_web/web2 0/0/39/79/118 200 170 - - ---- 2/2/1/0/0 0/0 "GET /health HTTP/1.1"

@@ -1,0 +1,2 @@
+user_id	assigned_node
+595ea7d9-52c7-11f1-9b00-02aaf8fcc71b	storage2-paris

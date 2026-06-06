@@ -1,0 +1,3 @@
+Status
+|- Number of jail:	4
+`- Jail list:	haproxy-http-auth, nginx-http-auth, nginx-limit-req, sshd
