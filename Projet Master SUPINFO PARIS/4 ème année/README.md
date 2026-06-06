@@ -2,7 +2,7 @@
 
 Cette année couvre l’automatisation, le cloud, les infrastructures distribuées et la gouvernance IT.
 
-<img src="./Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/3-captures-ecran/07-application-web-supfile-deployee-ny.png" alt="Application SUPFile déployée sur New York" width="900">
+<img src="Projet 4AE.png" alt="Application SUPFile déployée sur New York" width="900">
 
 ---
 
