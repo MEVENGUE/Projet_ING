@@ -1,7 +1,7 @@
 # AWS Cloud Architect — Capstone
 
 <div align="center">
-  <img src="./Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/AWS%20Academy%20Cloud%20Architecting%203%20Capstone%20Project.txt" alt="Capstone AWS Cloud Architect" width="900">
+  <img src="./Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Graphique/1%20ère%20page%20Projet%20Capstone%20AWS.jpg" alt="Capstone AWS Cloud Architect" width="900">
 </div>
 
 ## 🎯 Mission
