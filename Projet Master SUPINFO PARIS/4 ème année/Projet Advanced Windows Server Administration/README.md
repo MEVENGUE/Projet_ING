@@ -31,7 +31,8 @@ Mettre en œuvre un environnement **Windows Server** complet : services d’infr
 ## 📄 Livrables
 
 - [Assessment](./MedSearchLab/Assessment.pdf)
-
+- [Présentation d'infrastructure Microsoft](./MedSearchLab/Rapport/Projet_MedSearch_Infrastructure_Microsoft_4MCSA.pdf)
+- [Projet_MedSearch_Infrastructure_Microsoft](./MedSearchLab/Rapport/Présentation%20d'infrastructure%20Microsoft%20réalisé%20%20pour%20MedSearch.pdf)
 ---
 
 *Modules avancés SUPINFO Paris — Administration & sécurité Windows.*
