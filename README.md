@@ -47,6 +47,243 @@ Chaque projet démontre ma capacité à :
 
 ---
 
+# 🎓 Projets SUPINFO Paris
+
+# 🏛️ Spécialisation Cloud Architecture, Systems & Network — 4ème année
+
+<div align="center">
+
+![Banner](https://img.shields.io/badge/SUPINFO-Cloud%20Architecture%20%26%20Systems-blue?style=for-the-badge&logo=microsoftazure)
+
+💻 Kubernetes • AWS • Linux • Windows Server • Virtualization • DevOps • Cybersecurity
+
+</div>
+
+---
+
+# ☸️ 1. Kubernetes — Déploiement de l’Application Fleetman
+
+### 🚀 Architecture Microservices Kubernetes
+
+**Technologies :**  
+`Kubernetes` • `Docker` • `Spring Boot` • `MongoDB` • `ActiveMQ` • `Nginx` • `Hyper-V`
+
+### 📌 Description
+
+Déploiement complet d’une architecture microservices sur un cluster Kubernetes virtualisé :
+
+- Cluster Kubernetes haute disponibilité (1 Master + 2 Workers)
+- Déploiement de l’application Fleetman avec suivi temps réel des véhicules
+- Architecture microservices basée sur Spring Boot
+- Gestion des services, ConfigMaps, StatefulSets et Deployments
+- Supervision de la santé des pods avec probes Kubernetes
+- Gestion réseau et persistance des données MongoDB
+
+### 📄 Documentation
+
+➡️ [Voir la présentation](./Projet%20SUPINFO%20PARIS/Projet%20Kubernetes/Présentation%20Application%20Fleetman.pdf)
+
+![Couverture Kubernetes](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Kubernetes/1page%20Application%20Fleetman.jpg)
+
+---
+
+# 🐧 2. Advanced Linux Administration — Evil Corp Infrastructure
+
+### 🔐 Infrastructure Linux Sécurisée
+
+**Technologies :**  
+`Linux` • `SELinux` • `AppArmor` • `auditd` • `Prometheus` • `Firewalld` • `BorgBackup`
+
+### 📌 Description
+
+Conception et sécurisation avancée d’une infrastructure Linux orientée cybersécurité :
+
+- Hardening système Linux et réduction de surface d’attaque
+- Mise en place d’audit système avec auditd
+- Configuration des politiques SELinux/AppArmor
+- Supervision et monitoring avec Prometheus
+- Sauvegardes automatisées via rsync et BorgBackup
+- Élaboration d’un PRA (Plan de Reprise d’Activité)
+
+### 📄 Documentation
+
+➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/)
+
+![Couverture Linux](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Linux%20Administration/Linux.jpg)
+
+---
+
+# 🪟 3. Advanced Windows Server Administration — MedSearchLab
+
+### 🏢 Infrastructure Microsoft Enterprise
+
+**Technologies :**  
+`Windows Server` • `Active Directory` • `DNS` • `DHCP` • `GPO` • `Hyper-V`
+
+### 📌 Description
+
+Administration et sécurisation d’une infrastructure Microsoft d’entreprise :
+
+- Déploiement d’un domaine Active Directory complet
+- Gestion centralisée des utilisateurs et stratégies GPO
+- Configuration des services DNS et DHCP
+- Mise en place du hardening Windows Server
+- Tests d’administration et validation des services réseau
+- Supervision et segmentation de l’infrastructure
+
+### 📄 Documentation
+
+➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/Rapport/Projet_MedSearch_Infrastructure_Microsoft_4MCSA.pdf)
+
+➡️ [Voir la présentation](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/Rapport/Présentation%20d'infrastructure%20Microsoft%20réalisé%20pour%20MedSearch.pdf)
+
+![Couverture Windows](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Advanced%20Windows%20Server%20Administration/MedSearchLab/Graphique/1%20ère%20Page%20de%20présentation.jpg)
+
+---
+
+# ☁️ 4. AWS Cloud Architect — Capstone Project
+
+### ☁️ Architecture Cloud AWS Haute Disponibilité
+
+**Technologies :**  
+`AWS` • `IAM` • `VPC` • `EC2` • `S3` • `Auto Scaling` • `EBS`
+
+### 📌 Description
+
+Conception d’une architecture cloud scalable et sécurisée sur AWS :
+
+- Architecture multi-services AWS
+- Gestion des accès et permissions IAM
+- Réseau cloud sécurisé avec VPC et Bastion Host
+- Mise en place d’instances EC2 haute disponibilité
+- Auto Scaling et résilience de l’infrastructure
+- Stockage distribué avec EBS et Amazon S3
+
+### 📄 Documentation
+
+➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20AWS%20Cloud%20Architect/Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Docs/Rapport%20Technique%20Fin%20-%20Projet%20Capstone%20AWS.pdf)
+
+![Couverture AWS](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20AWS%20Cloud%20Architect/Capstone%20Project%20-%20AWS%20Academy%20Cloud%20Architecting%203/Graphique/1%20ère%20page%20Projet%20Capstone%20AWS.jpg)
+
+---
+
+# 🔄 5. Conduite du Changement — Transformation Organisationnelle
+
+### 📈 Gestion du Changement & Gouvernance IT
+
+**Technologies :**  
+`ITSM` • `Gestion de Projet` • `Communication` • `Transformation Digitale`
+
+### 📌 Description
+
+Projet stratégique centré sur l’accompagnement humain dans les transformations IT :
+
+- Diagnostic de maturité organisationnelle
+- Analyse des parties prenantes
+- Élaboration d’un plan de communication
+- Gestion des résistances au changement
+- Gouvernance et pilotage de transformation
+
+### 📄 Documentation
+
+➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Conduite%20du%20changement/Projet%20finale%20Conduite%20du%20changement.pdf)
+
+![Couverture Conduite](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Conduite%20du%20changement/1ère%20page%20Conduite%20du%20changement.jpg)
+
+---
+
+# ⚡ 6. Microsoft Power Platform — Low-Code Solutions
+
+### 🧩 Solutions Low-Code Microsoft
+
+**Technologies :**  
+`Power Apps` • `Power Automate` • `Power BI` • `Dataverse`
+
+### 📌 Description
+
+Conception de solutions métiers low-code avec l’écosystème Microsoft :
+
+- Création d’applications métiers Power Apps
+- Automatisation de workflows avec Power Automate
+- Visualisation de données avec Power BI
+- Exploitation du Dataverse Microsoft
+- Développement rapide de solutions no-code/low-code
+
+### 📄 Documentation
+
+➡️ [Voir le rapport](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fondamentaux%20et%20Manipulation%20Microsoft%20Power%20Platform/Projet%20Capstone/Capstone%20Project%20-%20Student%20Guide.pdf)
+
+---
+
+# 🖥️ 7. Virtualization Specialist — NovaSys Infrastructure
+
+### 🏗️ Infrastructure Virtualisée Haute Disponibilité
+
+**Technologies :**  
+`VMware` • `Hyper-V` • `VirtualBox` • `VLAN` • `Snapshots`
+
+### 📌 Description
+
+Conception d’une infrastructure virtualisée d’entreprise :
+
+- Déploiement d’environnements virtualisés
+- Isolation réseau via VLANs
+- Gestion des snapshots et sauvegardes
+- Élaboration d’un PRA virtualisé
+- Architecture haute disponibilité NovaSys
+
+### 📄 Documentation
+
+➡️ [Voir la présentation](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Virtualization%20Specialist/Projet%20NovaSys%20Infra/Projet%20NovaSys%20presentation.pdf)
+
+![Couverture NovaSys](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Virtualization%20Specialist/Projet%20NovaSys%20Infra/Captures/1%20ère%20Page%20Projet%20Novasys.jpg)
+
+---
+
+# 🌍 8. Projet de Fin d’Année — SUPFile Multi-Datacenter
+
+### 🌐 Infrastructure Multi-Datacenter Active/Active
+
+**Technologies :**  
+`Vagrant` • `VirtualBox` • `MariaDB Galera` • `GlusterFS` • `HAProxy` • `Keepalived` • `Prometheus` • `Grafana` • `Suricata` • `FastAPI`
+
+### 📌 Description
+
+Conception d’une infrastructure multi-datacenter active/active hautement disponible :
+
+- Infrastructure distribuée entre Paris, New York et Toronto
+- Réplication temps réel avec MariaDB Galera
+- Stockage distribué GlusterFS
+- Haute disponibilité via HAProxy et Keepalived
+- Monitoring centralisé avec Prometheus & Grafana
+- Sécurisation réseau avec Fail2Ban et Suricata
+- Interconnexion sécurisée via Tailscale
+- Déploiement d’une webapp FastAPI & Nginx
+
+### 📄 Documentation
+
+➡️ [Voir le rapport Infrastructure](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/0-Architecture%20Infra%20Supfile/rapport-infrastructure-SUPFile-PARIS8.pdf)
+
+➡️ [Voir le rapport WebApp](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/1-Architecture%20webapp/Rapport%20Technique%20Frontend%20projet%20SUPFile.pdf)
+
+➡️ [Voir la présentation](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/6-%20Présentation%20Projet%20Supfile/SUPFile-Infrastructure-POC.pdf)
+
+![Architecture Physique](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/6-%20Présentation%20Projet%20Supfile/Images/Architecture%20Physique.jpg)
+
+![Architecture Logique](Projet%20Master%20SUPINFO%20PARIS/4%20ème%20année/Projet%20Fin%20d'année%20-%20Supfile%20Multi%20Datacenter%20Paris%20NY%20Toronto/6-%20Présentation%20Projet%20Supfile/Images/Architecture%20Logique.jpg)
+
+---
+
+<div align="center">
+
+## 🚀 Portfolio Infrastructure & Cloud Engineering
+
+💻 Kubernetes • AWS • Linux • Windows Server • Virtualization • DevOps • Cybersecurity
+
+</div>
+
+---
+
 ## 🎓 Projets ECAM EPMI
 
 ### 1. 🔐 Projet Cybersécurité - Analyse des Vulnérabilités
