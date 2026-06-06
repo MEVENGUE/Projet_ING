@@ -1,7 +1,7 @@
 # Virtualization Specialist — NovaSys Infra
 
 <div align="center">
-  <img src="./Projet%20NovaSys%20Infra/Projet%20NovaSys%20presentation.pdf" alt="Présentation NovaSys Infra" width="900">
+  <img src="./Projet%20NovaSys%20Infra/Captures/Sommaire%20Projet%20Novasys.jpg" alt="Présentation NovaSys Infra" width="900">
 </div>
 
 ## 🎯 Mission
